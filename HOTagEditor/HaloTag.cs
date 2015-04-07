@@ -5,6 +5,7 @@ using System.Text;
 using System.ComponentModel;
 using System.Threading.Tasks;
 using System.IO;
+using System.Globalization;
 
 namespace HOTagEditor
 {
@@ -889,16 +890,77 @@ namespace HOTagEditor
         }
     }
 
+    class patchCol
+    {
+        private List<patch> patches;
+        
+        public patchCol()
+        {
+            patches = new List<patch>();
+        }
+
+        public void addPatch(patch patch)
+        {
+            patches.Add(patch);
+        }
+
+        public List<patch> getPatchByType(globals.tagType tagType)
+        {
+            List<patch> result = new List<patch>();
+            foreach(patch patch in patches)
+            {
+                if(patch.getType() == tagType)
+                {
+                    result.Add(patch);
+                }
+            }
+            return result;
+        }
+    }
+
     class patch
     {
         private string offset;
+        private string size;
         private Byte[] originalContent;
+        private Byte[] patchedContent;
+        private HaloTag patchTag;
         private globals.tagType tagType;
-        public patch(string offset, Byte[]originalContent, globals.tagType tagType)
+        public patch(string offset, string size, globals.tagType tagType)
         {
             this.offset = offset;
-            this.originalContent = originalContent;
+            this.size = size;
             this.tagType = tagType;
+        }
+
+        public void applyPatch(HaloTag tag, Byte[] originalContent, Byte[] patchedContent, BinaryWriter writer)
+        {
+            this.patchTag = tag;
+            this.originalContent = originalContent;
+            this.patchedContent = patchedContent;
+            writer.BaseStream.Position = int.Parse(this.patchTag.getOffset(), NumberStyles.HexNumber) + int.Parse(this.offset, NumberStyles.HexNumber);
+            writer.Write(this.patchedContent);
+        }
+
+        public void disablePatch(BinaryWriter writer)
+        {
+            writer.BaseStream.Position = int.Parse(this.patchTag.getOffset(), NumberStyles.HexNumber) + int.Parse(this.offset, NumberStyles.HexNumber);
+            writer.Write(this.originalContent);
+        }
+
+        public globals.tagType getType()
+        {
+            return this.tagType;
+        }
+
+        public string getOffset()
+        {
+            return offset;
+        }
+        
+        public string getSize()
+        {
+            return size;
         }
     }
 

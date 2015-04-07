@@ -14,6 +14,7 @@ namespace HOTagEditor
     public partial class HOTagEditorForm : Form
     {
         private HaloTagCol tagsCol;
+        private patchCol patchCol;
 
         public HOTagEditorForm()
         {
@@ -23,6 +24,8 @@ namespace HOTagEditor
         private void Form1_Load(object sender, EventArgs e)
         {
             tagsCol = new HaloTagCol();
+            patchCol = new patchCol();
+            patchCol.addPatch(new patch("34AB", "A0", globals.tagType.fx));
         }
 
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
@@ -234,22 +237,36 @@ namespace HOTagEditor
                 string tagType = e.Node.Parent.Text;
                 string offset = e.Node.Text;
                 HaloTag selectedTag = tagsCol.getTag(offset, tagType);
+                List<patch> availablePatches = patchCol.getPatchByType(selectedTag.getType());
                 Label offsetLabel = new Label();
                 offsetLabel.Text = "Offset: 0x" + selectedTag.getOffset();
                 Label sizeLabel = new Label();
                 sizeLabel.Text = "Size: 0x" + selectedTag.getSize();
                 Label displayNameLabel = new Label();
                 displayNameLabel.Text = "Display Name: " + selectedTag.getDisplayName();
-                TextBox tagContents = new TextBox();
-                tagContents.Width = flowLayoutPanel1.Width;
-                tagContents.Height = flowLayoutPanel1.Height - 46;
-                tagContents.Multiline = true;
-                tagContents.Text = BitConverter.ToString(selectedTag.getContents());
                 flowLayoutPanel1.Controls.Clear();
                 flowLayoutPanel1.Controls.Add(offsetLabel);
                 flowLayoutPanel1.Controls.Add(sizeLabel);
                 flowLayoutPanel1.Controls.Add(displayNameLabel);
-                flowLayoutPanel1.Controls.Add(tagContents);
+                if (availablePatches.Count == 0)
+                {
+                    TextBox tagContents = new TextBox();
+                    tagContents.Width = flowLayoutPanel1.Width;
+                    tagContents.Height = flowLayoutPanel1.Height - 46;
+                    tagContents.Multiline = true;
+                    tagContents.Text = BitConverter.ToString(selectedTag.getContents());
+                    flowLayoutPanel1.Controls.Add(tagContents);
+                }
+                else
+                {
+                    foreach(patch patch in availablePatches)
+                    {
+                        Label patchLabel = new Label();
+                        patchLabel.Text = "Offset: 0x" + patch.getOffset() + "Size: 0x" + patch.getSize();
+                        patchLabel.Width = flowLayoutPanel1.Width;
+                        flowLayoutPanel1.Controls.Add(patchLabel);
+                    }
+                }
 
             }
         }
