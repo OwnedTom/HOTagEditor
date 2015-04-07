@@ -11,11 +11,11 @@ using System.IO;
 
 namespace HOTagEditor
 {
-    public partial class Form1 : Form
+    public partial class HOTagEditorForm : Form
     {
         private HaloTagCol tagsCol;
 
-        public Form1()
+        public HOTagEditorForm()
         {
             InitializeComponent();
         }
@@ -217,6 +217,40 @@ namespace HOTagEditor
                 {
                     MessageBox.Show(ex.Message);
                 }
+            }
+        }
+
+        private void HOTagEditorForm_Resize(object sender, EventArgs e)
+        {
+            tagTreeView.Height = this.Height - 78;
+            flowLayoutPanel1.Height = this.Height - 78;
+            flowLayoutPanel1.Width = this.Width - tagTreeView.Width - 46;
+        }
+
+        private void tagTreeView_AfterSelect(object sender, TreeViewEventArgs e)
+        {
+            if(e.Node.Level == 1)
+            {
+                string tagType = e.Node.Parent.Text;
+                string offset = e.Node.Text;
+                HaloTag selectedTag = tagsCol.getTag(offset, tagType);
+                Label offsetLabel = new Label();
+                offsetLabel.Text = "Offset: 0x" + selectedTag.getOffset();
+                Label sizeLabel = new Label();
+                sizeLabel.Text = "Size: 0x" + selectedTag.getSize();
+                Label displayNameLabel = new Label();
+                displayNameLabel.Text = "Display Name: " + selectedTag.getDisplayName();
+                TextBox tagContents = new TextBox();
+                tagContents.Width = flowLayoutPanel1.Width;
+                tagContents.Height = flowLayoutPanel1.Height - 46;
+                tagContents.Multiline = true;
+                tagContents.Text = BitConverter.ToString(selectedTag.getContents());
+                flowLayoutPanel1.Controls.Clear();
+                flowLayoutPanel1.Controls.Add(offsetLabel);
+                flowLayoutPanel1.Controls.Add(sizeLabel);
+                flowLayoutPanel1.Controls.Add(displayNameLabel);
+                flowLayoutPanel1.Controls.Add(tagContents);
+
             }
         }
     }

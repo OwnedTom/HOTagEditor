@@ -420,7 +420,138 @@ namespace HOTagEditor
 
         public void setContent(BinaryReader reader)
         {
-            
+            foreach (HaloTag tag in fxTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in achiTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in adlgTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in aiglTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in antTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in armsTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in beamTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in binkTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in bipdTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in bitmTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in bkeyTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in blocTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in bmp3Tags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in bsdtTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in cddfTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in cfgtTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in cfxsTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in chadTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in charTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in chdtTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in chgdTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in chmtTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in clwdTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in cmoeTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in cntlTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in collTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in coloTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in cprlTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in creaTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in dctrTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in decsTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in drawTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in drdfTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in dsrcTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in effeTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in effgTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in efscTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in eqipTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in flckTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in footTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in formTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in gfxtTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in glpsTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in glvsTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in goofTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in gpdtTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in grupTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in hlmtTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in inpgTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in jmadTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in jmrqTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in jptTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in LbspTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in lensTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in lighTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in lsndTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in lst3Tags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in ltvlTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in machTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in matgTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in mdl3Tags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in mffnTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in modeTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in mulgTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in pdmTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in perfTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in phmoTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in pixlTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in pmdfTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in pmovTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in pphyTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in projTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in prt3Tags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in rasgTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in rmdTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in rmdfTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in rmflTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in rmhgTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in rmopTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in rmshTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in rmssTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in rmt2Tags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in rmtrTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in rmwTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in rmzoTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in rwrdTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in sbspTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in scenTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in scn3Tags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in scnrTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in sddtTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in sefcTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in sfxTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in sgpTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in shitTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in silyTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in skn3Tags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in skyaTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in sLdTTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in smdtTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in snclTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in sndTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in sndeTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in snmxTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in spkTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in sqtmTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in ssceTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in stylTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in susTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in trakTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in trdfTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in txt3Tags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in udlgTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in uiseTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in unicTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in vehiTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in vfslTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in vmdxTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in vtshTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in wacdTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in wclrTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in weapTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in wezrTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in wganTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in wgtzTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in wiglTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in windTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in wposTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in wrotTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in wsclTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in wsprTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
+            foreach (HaloTag tag in wtuvTags) { reader.BaseStream.Position = int.Parse(tag.getOffset(), System.Globalization.NumberStyles.HexNumber); tag.setContents(reader.ReadBytes(int.Parse(tag.getSize(), System.Globalization.NumberStyles.HexNumber))); }
         }
 
         public List<HaloTag> getTagsList(string tagType)
@@ -562,6 +693,146 @@ namespace HOTagEditor
                 default: List<HaloTag> List = new List<HaloTag>(); return List;
             }
         }
+
+        public HaloTag getTag(string offset, string tagType)
+        {
+            switch (tagType)
+            {
+                case "<fx>": foreach (HaloTag tag in fxTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "achi": foreach (HaloTag tag in achiTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "adlg": foreach (HaloTag tag in adlgTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "aigl": foreach (HaloTag tag in aiglTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "ant!": foreach (HaloTag tag in antTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "arms": foreach (HaloTag tag in armsTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "beam": foreach (HaloTag tag in beamTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "bink": foreach (HaloTag tag in binkTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "bipd": foreach (HaloTag tag in bipdTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "bitm": foreach (HaloTag tag in bitmTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "bkey": foreach (HaloTag tag in bkeyTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "bloc": foreach (HaloTag tag in blocTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "bmp3": foreach (HaloTag tag in bmp3Tags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "bsdt": foreach (HaloTag tag in bsdtTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "cddf": foreach (HaloTag tag in cddfTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "cfgt": foreach (HaloTag tag in cfgtTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "cfxs": foreach (HaloTag tag in cfxsTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "chad": foreach (HaloTag tag in chadTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "char": foreach (HaloTag tag in charTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "chdt": foreach (HaloTag tag in chdtTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "chgd": foreach (HaloTag tag in chgdTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "chmt": foreach (HaloTag tag in chmtTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "clwd": foreach (HaloTag tag in clwdTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "cmoe": foreach (HaloTag tag in cmoeTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "cntl": foreach (HaloTag tag in cntlTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "coll": foreach (HaloTag tag in collTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "colo": foreach (HaloTag tag in coloTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "cprl": foreach (HaloTag tag in cprlTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "crea": foreach (HaloTag tag in creaTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "dctr": foreach (HaloTag tag in dctrTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "decs": foreach (HaloTag tag in decsTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "draw": foreach (HaloTag tag in drawTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "drdf": foreach (HaloTag tag in drdfTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "dsrc": foreach (HaloTag tag in dsrcTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "effe": foreach (HaloTag tag in effeTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "effg": foreach (HaloTag tag in effgTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "efsc": foreach (HaloTag tag in efscTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "eqip": foreach (HaloTag tag in eqipTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "flck": foreach (HaloTag tag in flckTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "foot": foreach (HaloTag tag in footTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "form": foreach (HaloTag tag in formTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "gfxt": foreach (HaloTag tag in gfxtTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "glps": foreach (HaloTag tag in glpsTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "glvs": foreach (HaloTag tag in glvsTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "goof": foreach (HaloTag tag in goofTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "gpdt": foreach (HaloTag tag in gpdtTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "grup": foreach (HaloTag tag in grupTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "hlmt": foreach (HaloTag tag in hlmtTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "inpg": foreach (HaloTag tag in inpgTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "jmad": foreach (HaloTag tag in jmadTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "jmrq": foreach (HaloTag tag in jmrqTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "jpt!": foreach (HaloTag tag in jptTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "Lbsp": foreach (HaloTag tag in LbspTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "lens": foreach (HaloTag tag in lensTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "ligh": foreach (HaloTag tag in lighTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "lsnd": foreach (HaloTag tag in lsndTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "lst3": foreach (HaloTag tag in lst3Tags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "ltvl": foreach (HaloTag tag in ltvlTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "mach": foreach (HaloTag tag in machTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "matg": foreach (HaloTag tag in matgTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "mdl3": foreach (HaloTag tag in mdl3Tags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "mffn": foreach (HaloTag tag in mffnTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "mode": foreach (HaloTag tag in modeTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "mulg": foreach (HaloTag tag in mulgTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "pdm!": foreach (HaloTag tag in pdmTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "perf": foreach (HaloTag tag in perfTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "phmo": foreach (HaloTag tag in phmoTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "pixl": foreach (HaloTag tag in pixlTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "pmdf": foreach (HaloTag tag in pmdfTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "pmov": foreach (HaloTag tag in pmovTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "pphy": foreach (HaloTag tag in pphyTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "proj": foreach (HaloTag tag in projTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "prt3": foreach (HaloTag tag in prt3Tags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "rasg": foreach (HaloTag tag in rasgTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "rmd": foreach (HaloTag tag in rmdTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "rmdf": foreach (HaloTag tag in rmdfTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "rmfl": foreach (HaloTag tag in rmflTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "rmhg": foreach (HaloTag tag in rmhgTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "rmop": foreach (HaloTag tag in rmopTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "rmsh": foreach (HaloTag tag in rmshTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "rmss": foreach (HaloTag tag in rmssTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "rmt2": foreach (HaloTag tag in rmt2Tags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "rmtr": foreach (HaloTag tag in rmtrTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "rmw": foreach (HaloTag tag in rmwTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "rmzo": foreach (HaloTag tag in rmzoTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "rwrd": foreach (HaloTag tag in rwrdTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "sbsp": foreach (HaloTag tag in sbspTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "scen": foreach (HaloTag tag in scenTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "scn3": foreach (HaloTag tag in scn3Tags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "scnr": foreach (HaloTag tag in scnrTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "sddt": foreach (HaloTag tag in sddtTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "sefc": foreach (HaloTag tag in sefcTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "sfx+": foreach (HaloTag tag in sfxTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "sgp!": foreach (HaloTag tag in sgpTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "shit": foreach (HaloTag tag in shitTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "sily": foreach (HaloTag tag in silyTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "skn3": foreach (HaloTag tag in skn3Tags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "skya": foreach (HaloTag tag in skyaTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "sLdT": foreach (HaloTag tag in sLdTTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "smdt": foreach (HaloTag tag in smdtTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "sncl": foreach (HaloTag tag in snclTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "snd!": foreach (HaloTag tag in sndTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "snde": foreach (HaloTag tag in sndeTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "snmx": foreach (HaloTag tag in snmxTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "spk!": foreach (HaloTag tag in spkTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "sqtm": foreach (HaloTag tag in sqtmTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "ssce": foreach (HaloTag tag in ssceTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "styl": foreach (HaloTag tag in stylTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "sus!": foreach (HaloTag tag in susTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "trak": foreach (HaloTag tag in trakTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "trdf": foreach (HaloTag tag in trdfTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "txt3": foreach (HaloTag tag in txt3Tags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "udlg": foreach (HaloTag tag in udlgTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "uise": foreach (HaloTag tag in uiseTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "unic": foreach (HaloTag tag in unicTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "vehi": foreach (HaloTag tag in vehiTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "vfsl": foreach (HaloTag tag in vfslTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "vmdx": foreach (HaloTag tag in vmdxTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "vtsh": foreach (HaloTag tag in vtshTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "wacd": foreach (HaloTag tag in wacdTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "wclr": foreach (HaloTag tag in wclrTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "weap": foreach (HaloTag tag in weapTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "wezr": foreach (HaloTag tag in wezrTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "wgan": foreach (HaloTag tag in wganTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "wgtz": foreach (HaloTag tag in wgtzTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "wigl": foreach (HaloTag tag in wiglTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "wind": foreach (HaloTag tag in windTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "wpos": foreach (HaloTag tag in wposTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "wrot": foreach (HaloTag tag in wrotTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "wscl": foreach (HaloTag tag in wsclTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "wspr": foreach (HaloTag tag in wsprTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                case "wtuv": foreach (HaloTag tag in wtuvTags) { if (tag.getOffset() == offset) { return tag; } } return new HaloTag("", "", "", "", globals.tagType.fx);
+                default: HaloTag emptyTag = new HaloTag("", "", "", "", globals.tagType.fx); return emptyTag;
+            }
+        }
     }
 
     class HaloTag
@@ -605,6 +876,11 @@ namespace HOTagEditor
         public globals.tagType getType()
         {
             return this.tagType;
+        }
+
+        public Byte[] getContents()
+        {
+            return this.contents;
         }
 
         public void setContents(Byte[] contents)
